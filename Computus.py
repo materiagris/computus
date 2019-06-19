@@ -22,7 +22,7 @@ parser.add_argument('-a', '--ash', action='store_true', help='Ash Wednesday')
 parser.add_argument('-p', '--palm', action='store_true', help='Palm Sunday')
 parser.add_argument('-e', '--easter', action='store_true', help='Easter')
 parser.add_argument('-w', '--holyweek', action='store_true', help='Holy Week')
-parser.add_argument('year', type=int, nargs='?', help='Any year number from 1587')
+parser.add_argument('year', type=int, nargs='?', help='Any year number from 1583')
 
 args = parser.parse_args()
 
