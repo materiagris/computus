@@ -15,7 +15,7 @@ def computus(self, year):
     day = f % 31 + 1    
     return date(year, month, day)
 
-parser = argparse.ArgumentParser(prog='computus', description='Computus algorithm: Returns Easter time and the holidays that are related to it.')
+parser = argparse.ArgumentParser(prog='computus', description='Computus command: Python implementation of the algorithm to retrieve Easter time and the related holidays.')
 parser.add_argument('-v', '--version', action='version', version='%(prog)s 1.0. (CC) 2019 Rodrigo Vegas Sánchez-Ferrero.')
 parser.add_argument('-c', '--carnival', action='store_true', help='Carnival time')
 parser.add_argument('-a', '--ash', action='store_true', help='Ash Wednesday')
