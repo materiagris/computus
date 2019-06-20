@@ -49,6 +49,6 @@ if args.holyweek:
         print((easter - timedelta(days=value)).strftime("%d/%m/%Y,"),key,(easter - timedelta(days=value)).strftime("%A."))
     args.easter = 'e'
 
-if args.easter:
+if args.easter or args.year:
     if year >= 1583: print(easter.strftime("%d/%m/%Y, Easter. %A."))
     else: print("Error: The year must be an integer greater than 1583.")
