@@ -30,7 +30,11 @@ if len(sys.argv) < 2:
     parser.print_usage()
     sys.exit(1)
 
-if args.year: year = args.year
+if args.year:
+    if 1583 <= args.year <= 9999: year = args.year
+    else:
+        print("Error: The year must be an integer between 1583 and 9999.")
+        sys.exit(1)
 else: year = date.today().year
 
 easter = computus([], year)
@@ -49,6 +53,4 @@ if args.holyweek:
         print((easter - timedelta(days=value)).strftime("%d/%m/%Y,"),key,(easter - timedelta(days=value)).strftime("%A."))
     args.easter = 'e'
 
-if args.easter or args.year:
-    if year >= 1583: print(easter.strftime("%d/%m/%Y, Easter. %A."))
-    else: print("Error: The year must be an integer greater than 1583.")
+if args.easter or (len(sys.argv) == 2 and args.year): print(easter.strftime("%d/%m/%Y, Easter. %A."))
