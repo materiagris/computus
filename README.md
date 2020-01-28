@@ -12,4 +12,4 @@ arguments:
   -p, --palm      Palm Sunday.
   -e, --easter    Easter.
   -w, --holyweek  Holy Week.
-  year            Any year number from 1583.
+  year            Any year number since 1583.
