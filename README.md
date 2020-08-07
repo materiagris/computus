@@ -1,6 +1,6 @@
 # computus
 
-Command to retrieve Easter time and the related holidays.
+Command to retrieve Easter time and related holidays.
 
 usage: computus [-h] [-v] [-c] [-a] [-p] [-e] [-w] [year]
 
