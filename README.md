@@ -1,7 +1,7 @@
 # computus
 
 Command to retrieve Easter time and related holidays.
-
+```
 usage: computus [-h] [-v] [-c] [-a] [-p] [-e] [-w] [year]
 
 arguments:
@@ -13,3 +13,4 @@ arguments:
   -e, --easter    Easter.
   -w, --holyweek  Holy Week.
   year            Any year number since 1583.
+```
